@@ -2,7 +2,7 @@ body {
   * {
     font-family: "Inter", sans-serif;
   }
-
+  height: 100vh;
   @include flex-center;
 }
 
@@ -13,30 +13,33 @@ body {
 
   height: 500px;
   width: 500px;
-  margin-top: 200px;
 
-  .post-container,
+  .post-container {
+    @include flex-center;
+    flex-direction: column;
+  }
+
   .post-info {
     @include flex-center;
     flex-direction: column;
     gap: 5px;
   }
 
+  .gif {
+    height: 500px;
+  }
+
   .post-container {
-    gap: 25px;
+    gap: 15px;
   }
 
   .post-heading {
-    font-size: 24px;
+    font-size: 48px;
+    font-weight: 700;
   }
 
   .post-text {
-    font-size: 18px;
-  }
-
-  .copyright {
-    font-size: 12px;
-
-    color: rgb(80, 80, 80);
+    font-size: 16px;
+    font-weight: 700;
   }
 }

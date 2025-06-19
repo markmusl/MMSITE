@@ -55,6 +55,7 @@ table {
 }
 
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,9 +70,13 @@ body * {
   align-items: center;
   height: 500px;
   width: 500px;
-  margin-top: 200px;
 }
-.posts-container .post-container,
+.posts-container .post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .posts-container .post-info {
   display: flex;
   justify-content: center;
@@ -79,16 +84,17 @@ body * {
   flex-direction: column;
   gap: 5px;
 }
+.posts-container .gif {
+  height: 500px;
+}
 .posts-container .post-container {
-  gap: 25px;
+  gap: 15px;
 }
 .posts-container .post-heading {
-  font-size: 24px;
+  font-size: 48px;
+  font-weight: 700;
 }
 .posts-container .post-text {
-  font-size: 18px;
-}
-.posts-container .copyright {
-  font-size: 12px;
-  color: rgb(80, 80, 80);
+  font-size: 16px;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
