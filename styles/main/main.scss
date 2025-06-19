@@ -1,6 +1,5 @@
-// Main Structure
-@import "../layout/reset";
-@import "../layout/main";
+// Fonts & Symbols
+@import "../typography/typography";
 
 // Variables
 @import "../variables/variables";
@@ -9,5 +8,6 @@
 // Components
 @import "../components/components";
 
-// Fonts & Symbols
-@import "../typography/typography";
+// Main Structure
+@import "../layout/reset";
+@import "../layout/main";

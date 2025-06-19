@@ -1,4 +1,42 @@
-body * {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
+body {
+  * {
+    font-family: "Inter", sans-serif;
+  }
+
+  @include flex-center;
+}
+
+// Posts
+
+.posts-container {
+  @include flex-center;
+
+  height: 500px;
+  width: 500px;
+  margin-top: 200px;
+
+  .post-container,
+  .post-info {
+    @include flex-center;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .post-container {
+    gap: 25px;
+  }
+
+  .post-heading {
+    font-size: 24px;
+  }
+
+  .post-text {
+    font-size: 18px;
+  }
+
+  .copyright {
+    font-size: 12px;
+
+    color: rgb(80, 80, 80);
+  }
 }
